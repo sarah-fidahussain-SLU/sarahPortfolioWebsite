@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarah Fidahussain</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/349713598c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" alt="" class="logo">
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/sarahwithstars.jpg/?hl=en"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/sarah-fidahussain-987ba8247"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/sarah-fidahussain"><i class="fa-brands fa-square-github"></i></a>
+                </div>
+                <ul id = "sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <i class="fas fa-times" onclick="closemenu()" style="color: #2a2b2d;"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()" style="color: #2a2b2d;"></i>
+            </nav>
+            <div class="header-text">
+                <p><span> studying computer science (and a lot of other stuff)</span></p>
+                <h1>Hello, this is <br> Sarah Fidahussain. </h1>
+            </div>
+        </div>
+    </div>
+    <!--------about ------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am currently a student at <span>Saint Louis University</span> pursuing a major in Computer
+                        Science
+                        and minors in Creative Writing and Math. I have interned as a Python and C# developer for two
+                        years at the
+                        <span>Federal Reserve Bank
+                            of St.Louis</span> and I am interested in full-stack development. Outside of school, I enjoy
+                        artistic pursuits and writing.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('technical-tools')">Technical Tools</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>debugging, updating, and deploying web applicatons
+                            </li>
+                            <li><span>Machine Learning</span><br>developed a machine learning model</li>
+                            <li><span>Problem Solving</span><br>participated in capstone project</li>
+                            <li><span>Team Collaboration</span><br>worked collaboratively with AGILE development team</li>
+                            <li><span>Graphic Design</span><br>participate in multiple art fairs and manage an art shop
+                                on Etsy</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="technical-tools">
+                        <ul>
+                            <li><span>Programming Languages</span><br>Java, Python, Rust, R, C#, C++, SQL, JavaScript,
+                                CSS, HTML</li>
+                            <li><span>Game Development</span><br>Unity</li>
+                            <li><span>Development Frameworks and Technologies</span><br>.NET</li>
+                            <li><span>CI/CD</span><br>Git, GitLab</li>
+                            <li><span>Graphic Design and Art Tools</span><br>Adobe Creative Cloud, Procreate</li>
+                            <li><span>Automation and Integration Platforms</span><br>Power Automate</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------experience---------------->
+    <div id="experience">
+        <div class="container">
+            <h1 class="sub-title">Experience</h1>
+            <div class="row">
+                <div class = "work-col-1">
+                    <div class="work-titles">
+                        <p class="work-links active-worklink" onclick="openworktab('fed2023')">Federal Reserve Bank of St.Louis 2023</p>
+                        <p class="work-links" onclick="openworktab('fed2022')">Federal Reserve Bank of St.Louis 2022</p>
+                    </div>
+                </div>
+                <div class = "work-col-2">
+                    <div class="tab-workcontents active-worktab" id="fed2023">
+                        <ul>
+                            <li><span>C# Developer Intern</span><br></li>
+                            <li><em>may 2023 - august 2023</em></li><br>
+                            <li>⭑ Worked collaboratively with an AGILE application development team using GitLab and a variety of CI/CD pipelines
+                            </li><br>
+                            <li>⭑ Completed programming tasks involving debugging, updating, and deploying web applications in the Supervision division
+                            </li><br>
+                            <li>⭑ Presented a talk in front of visiting high school students describing my internship experience 
+                            </li><br>
+                            <li>⭑ Gained experience with AWS and PowerAutomate</li><br>
+                        </ul>
+                    </div>
+                    <div class="tab-workcontents" id="fed2022">
+                        <ul>
+                            <li><span>Python Developer Intern</span><br></li>
+                            <li><em>june 2022 - august 2022</em></li><br>
+                            <li>⭑ Developed a machine learning model to predict employee certification completion rates in the IT division using Python</li><br>
+                            <li>⭑ Successfully demoed the predictive model to key stakeholders and decision-makers in the IT division</li><br>
+                            <li>⭑ Participated in a Capstone project alongside a team of interns where we tackled a business problem of maintaining engagement between remote, hybrid, and public employees</li><br>
+                            <li>⭑ Presented the business solution to a panel of judges</li><br>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------portfolio-------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work" >
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>What Song Do You Play?</h3>
+                        <p>This app's description</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #fce9d0;"></i></a>
+                    </div>                
+                </div>
+                <div class="work" >
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Coming-of-Age Witch</h3>
+                        <p>Digital art portfolio</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #fce9d0;"></i></a>
+                    </div>  
+                </div>
+                <div class="work" >
+                    <img src="images/background2.png" alt="">
+                    <div class="layer">
+                        <h3>hopefully another soon ! :] </h3>
+                        <p>Digital art portfolio</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #fce9d0;"></i></a>
+                    </div>  
+                </div>          
+            </div>
+            <!--button functionality---<a href="#" class="btn"><em>See More!</em></a>--->
+        </div>
+    </div>
+    <!-------------contact-------------------->
+    <div class = "copyright">
+        <p>Copyright © Sarah Fidahussain. <i class="fa-solid fa-star" style="color: #f3a732;"></i></p>
+    </div>
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        var worktablinks = document.getElementsByClassName("work-links");
+        var worktabcontents = document.getElementsByClassName("tab-workcontents");
+
+        function openworktab(tabname) {
+            for (tablink of worktablinks) {
+                tablink.classList.remove("active-worklink");
+            }
+            for (tabcontent of worktabcontents) {
+                tabcontent.classList.remove("active-worktab");
+            }
+            event.currentTarget.classList.add("active-worklink");
+            document.getElementById(tabname).classList.add("active-worktab");
+        }
+
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu")
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+</body>
+
+</html>
